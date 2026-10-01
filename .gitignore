@@ -1,0 +1,58 @@
+# SwiftPM build output (includes .build/deps/whisper.cpp clone + whisper-build)
+.build/
+.swiftpm/
+
+# Reproducible app bundle output
+dist/
+
+# Local app bundle copy at repo root (build artifact)
+WhisperDict.app/
+
+# Xcode
+*.xcodeproj/*
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Swift
+*.o
+*.d
+*.swp
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Crash logs / diagnostics
+*.crash
+*.diag
+
+# Downloaded whisper models (large binaries, stored in Application Support at runtime)
+*.bin
+*.pt
+*.onnx
+models/
+
+# CMake leftovers if built outside .build
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
